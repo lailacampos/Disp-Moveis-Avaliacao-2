@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="32dp"
+            tools:context=".activity.ConfigScreen">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.1" />
+
+            <TextView
+                android:id="@+id/coordenadas_geograficas_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/coordenadas_formato_escolha_texto"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/coordenadas_geograficas_RadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/coordenadas_geograficas_TextView">
+
+                <RadioButton
+                    android:id="@+id/grau_decimal_RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/grau_decimal" />
+
+                <RadioButton
+                    android:id="@+id/grau_minuto_RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/grau_minuto_decimal" />
+
+                <RadioButton
+                    android:id="@+id/grau_minuto_segundo_RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/grau_minuto_segundo_decimal" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/unidade_velocidade_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/unidade_velocidade_texto"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/coordenadas_geograficas_RadioGroup" />
+
+            <RadioGroup
+                android:id="@+id/unidade_velocidade_RadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/unidade_velocidade_TextView">
+
+                <RadioButton
+                    android:id="@+id/km_hora_RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quilometro_hora" />
+
+                <RadioButton
+                    android:id="@+id/milha_hora_RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/milhas_hora" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/orientacao_mapa_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/orientacao_mapa_texto"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/unidade_velocidade_RadioGroup" />
+
+            <RadioGroup
+                android:id="@+id/orientacao_mapa_RadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/orientacao_mapa_TextView">
+
+                <RadioButton
+                    android:id="@+id/orientacao_nenhuma_RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nenhuma_orientacao_mapa" />
+
+                <RadioButton
+                    android:id="@+id/orientacao_north_up_RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/north_up_orientacao_mapa" />
+
+                <RadioButton
+                    android:id="@+id/orientacao_course_up_RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/course_up_orientacao_mapa" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tipo_mapa_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/tipo_mapa_texto"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/orientacao_mapa_RadioGroup" />
+
+            <RadioGroup
+                android:id="@+id/tipo_mapa_RadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/tipo_mapa_TextView">
+
+                <RadioButton
+                    android:id="@+id/vetorial_RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vetorial_tipo_mapa" />
+
+                <RadioButton
+                    android:id="@+id/imagem_satelite_RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/satelite_tipo_mapa" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/informacoes_trafego_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/informacoes_trafego_texto"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/tipo_mapa_RadioGroup" />
+
+            <RadioGroup
+                android:id="@+id/informacoes_trafego_RadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/informacoes_trafego_TextView">
+
+                <RadioButton
+                    android:id="@+id/trafego_ligado_RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/informacoes_trafego_ligado" />
+
+                <RadioButton
+                    android:id="@+id/trafego_desligado_RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/informacoes_trafego_desligado" />
+            </RadioGroup>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,32 +1,51 @@
 <resources>
     <string name="app_name">Avaliacao 1</string>
 
-    <string name="tela_login">Tela de Login</string>
-    <string name="tela_principal">Tela Principal</string>
-    <string name="tela_config">Tela de Configuração</string>
+    <!--    Screens-->
+    <string name="tela_inicial">Tela Inicial</string>
+    <string name="tela_configuracao">Configuração</string>
+    <string name="tela_navegacao">Navegação</string>
+    <string name="tela_historico">Histórico</string>
+    <string name="tela_informacoes_gnss">Informações</string>
+    <string name="tela_creditos">Créditos</string>
 
-    <string name="entrar_button">Entrar</string>
-    <string name="cancelar_button">Cancelar</string>
-    <string name="configurar_button">Configurar</string>
-    <string name="sair_button">Sair</string>
-    <string name="confirmar_button">Confirmar</string>
 
-    <string name="usuario_texto">Usuário:</string>
-    <string name="usuario_texto_hint">Usuário</string>
-    <string name="novo_usuario_texto">Novo Usuário:</string>
-    <string name="novo_usuario_texto_hint">Novo Usuário</string>
-    <string name="senha_texto">Senha:</string>
-    <string name="senha_texto_hint">Senha</string>
-    <string name="nova_senha_texto">Nova Senha:</string>
-    <string name="nova_senha_texto_hint">Nova Senha</string>
-    <string name="confirmar_senha_texto">Confirmar Senha:</string>
+    <!--    Buttons-->
+    <string name="configuracao_button">Configuração</string>
+    <string name="navegacao_button">Navegação</string>
+    <string name="historico_button">Histórico</string>
+    <string name="informacoes_gnss_button">Informações (GNSS)</string>
+    <string name="creditos_button">Créditos</string>
 
-    <string name="aplicacao_bloqueada_title">Aplicação Bloqueada</string>
-    <string name="aplicacao_bloqueada_text">Esta aplicação foi permanentemente bloqueada por excesso de tentativas de login</string>
 
-    <string name="senha_incorreta">"Senha Incorreta"</string>
-    <string name="dados_incorretos">Usuário/Senha Incorreto\nVocê tem %1$d tentativas</string>
-    <string name="dados_vazios">"Por favor digite um Usuário/Senha válido"</string>
+    <!--    Configuration Screen-->
 
+    <!--    Geographic Coordinates-->
+    <string name="coordenadas_formato_escolha_texto">Coordenadas geográficas:</string>
+
+    <string name="grau_decimal">Grau decimal</string>
+    <string name="grau_minuto_decimal">Grau-Minuto decimal</string>
+    <string name="grau_minuto_segundo_decimal">Grau-Minuto-Segundo decimal</string>
+
+    <!--    Velocity-->
+    <string name="unidade_velocidade_texto">Unidade velocidade:</string>
+    <string name="quilometro_hora">Km/h (quilometro por hora)</string>
+    <string name="milhas_hora">Mph (milhas por hora)</string>
+
+    <!--    Map Orientation-->
+    <string name="orientacao_mapa_texto">Orientação do Mapa:</string>
+    <string name="nenhuma_orientacao_mapa">Nenhuma</string>
+    <string name="north_up_orientacao_mapa">North Up</string>
+    <string name="course_up_orientacao_mapa">Course Up</string>
+
+    <!--    Map Type-->
+    <string name="tipo_mapa_texto">Tipo do Mapa:</string>
+    <string name="vetorial_tipo_mapa">Vetorial</string>
+    <string name="satelite_tipo_mapa">Imagem de Satélite</string>
+
+    <!--    Transit Information-->
+    <string name="informacoes_trafego_texto">Informações de Tráfego:</string>
+    <string name="informacoes_trafego_ligado">Ligado</string>
+    <string name="informacoes_trafego_desligado">Desligado</string>
 
 </resources>

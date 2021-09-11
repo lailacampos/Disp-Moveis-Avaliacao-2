@@ -5,90 +5,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="32dp"
-    tools:context=".MainActivity">
+    tools:context=".activity.MainActivity">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.33" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.3" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/usuario_texto"
-        android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editTextTextPersonName"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/senha_texto"
-        android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editTextTextPersonName2"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName"
+    <Button
+        android:id="@+id/configuracao_Button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/usuario_texto_hint"
-        android:inputType="textPersonName"
-        android:textSize="24sp"
+        android:text="@string/configuracao_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32999998" />
+
+    <Button
+        android:id="@+id/navegacao_Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/navegacao_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/guideline3"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/configuracao_Button" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName2"
+    <Button
+        android:id="@+id/historico_Button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="@string/senha_texto_hint"
-        android:inputType="textPersonName"
-        android:textSize="24sp"
+        android:text="@string/historico_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
-        tools:ignore="TextContrastCheck" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.7" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navegacao_Button" />
 
     <Button
-        android:id="@+id/entrar_Button"
-        android:layout_width="140dp"
+        android:id="@+id/informacoes_gnss_Button"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/entrar_button"
-        android:textSize="16sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/cancelar_Button"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:text="@string/informacoes_gnss_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/historico_Button" />
 
     <Button
-        android:id="@+id/cancelar_Button"
-        android:layout_width="140dp"
+        android:id="@+id/creditos_Button"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/cancelar_button"
-        android:textSize="16sp"
+        android:text="@string/creditos_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/informacoes_gnss_Button" />
 </androidx.constraintlayout.widget.ConstraintLayout>

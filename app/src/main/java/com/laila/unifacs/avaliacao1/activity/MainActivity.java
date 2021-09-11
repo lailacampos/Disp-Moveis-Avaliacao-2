@@ -1,8 +1,10 @@
-package com.laila.unifacs.avaliacao1;
+package com.laila.unifacs.avaliacao1.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.laila.unifacs.avaliacao1.R;
 
 public class MainActivity extends AppCompatActivity {
 
