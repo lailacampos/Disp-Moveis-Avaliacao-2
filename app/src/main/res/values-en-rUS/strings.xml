@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Avaliacao 1</string>
+
+    <string name="tela_login">Login Screen</string>
+    <string name="tela_principal">Main Screen</string>
+    <string name="tela_config">Configuration Screen</string>
+    <string name="entrar_button">Login</string>
+    <string name="cancelar_button">Cancel</string>
+    <string name="configurar_button">Configure</string>
+    <string name="sair_button">Exit</string>
+    <string name="confirmar_button">Confirm</string>
+    <string name="usuario_texto">User:</string>
+    <string name="novo_usuario_texto">New User:</string>
+    <string name="senha_texto">Password:</string>
+    <string name="nova_senha_texto">New Password:</string>
+    <string name="confirmar_senha_texto">Confirm Password:</string>
+    <string name="novo_usuario_texto_hint">New User</string>
+    <string name="nova_senha_texto_hint">New Password</string>
+    <string name="usuario_texto_hint">User</string>
+    <string name="senha_texto_hint">Password</string>
+    <string name="aplicacao_bloqueada_title">Application Blocked</string>
+    <string name="aplicacao_bloqueada_text">This application was permanently blocked bacause of too many failed login attempts</string>
+    <string name="dados_incorretos">User/Password incorrect\nYou have %1$d tries</string>
+    <string name="dados_vazios">The new User/Password cannot be empty</string>
+    <string name="senha_incorreta">Incorrect Password</string>
+
+</resources>

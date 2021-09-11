@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Avaliacao 1</string>
+
+    <string name="tela_login">Tela de Login</string>
+    <string name="tela_principal">Tela Principal</string>
+    <string name="tela_config">Tela de Configuração</string>
+
+    <string name="entrar_button">Entrar</string>
+    <string name="cancelar_button">Cancelar</string>
+    <string name="configurar_button">Configurar</string>
+    <string name="sair_button">Sair</string>
+    <string name="confirmar_button">Confirmar</string>
+
+    <string name="usuario_texto">Usuário:</string>
+    <string name="usuario_texto_hint">Usuário</string>
+    <string name="novo_usuario_texto">Novo Usuário:</string>
+    <string name="novo_usuario_texto_hint">Novo Usuário</string>
+    <string name="senha_texto">Senha:</string>
+    <string name="senha_texto_hint">Senha</string>
+    <string name="nova_senha_texto">Nova Senha:</string>
+    <string name="nova_senha_texto_hint">Nova Senha</string>
+    <string name="confirmar_senha_texto">Confirmar Senha:</string>
+
+    <string name="aplicacao_bloqueada_title">Aplicação Bloqueada</string>
+    <string name="aplicacao_bloqueada_text">Esta aplicação foi permanentemente bloqueada por excesso de tentativas de login</string>
+
+    <string name="senha_incorreta">"Senha Incorreta"</string>
+    <string name="dados_incorretos">Usuário/Senha Incorreto\nVocê tem %1$d tentativas</string>
+    <string name="dados_vazios">"Por favor digite um Usuário/Senha válido"</string>
+
+
+</resources>
