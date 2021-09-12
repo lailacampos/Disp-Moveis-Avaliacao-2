@@ -48,4 +48,8 @@
     <string name="informacoes_trafego_ligado">Ligado</string>
     <string name="informacoes_trafego_desligado">Desligado</string>
 
+<!--    Credit Screen-->
+    <string name="credito_desenvolvedor">Desenvolvedor:</string>
+    <string name="nome_laila">Laila R. H. de Campos</string>
+
 </resources>

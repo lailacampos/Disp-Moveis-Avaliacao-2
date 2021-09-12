@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Avaliacao1">
         <activity
+            android:name=".activity.CreditScreen"
+            android:exported="true" />
+        <activity
             android:name=".activity.ConfigScreen"
             android:exported="true" />
         <activity
