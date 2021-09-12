@@ -11,13 +11,16 @@
         android:theme="@style/Theme.Avaliacao1">
         <activity
             android:name=".activity.CreditScreen"
-            android:exported="true" />
+            android:exported="true"
+            android:label="@string/tela_creditos"/>
         <activity
             android:name=".activity.ConfigScreen"
-            android:exported="true" />
+            android:exported="true"
+            android:label="@string/tela_configuracao"/>
         <activity
             android:name=".activity.MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:label="@string/tela_inicial">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

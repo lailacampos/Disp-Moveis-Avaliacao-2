@@ -6,7 +6,7 @@
 
     <!--    Screens-->
     <string name="tela_inicial">Tela Inicial</string>
-    <string name="tela_configuracao">Configuração</string>
+    <string name="tela_configuracao">Configurações</string>
     <string name="tela_navegacao">Navegação</string>
     <string name="tela_historico">Histórico</string>
     <string name="tela_informacoes_gnss">Informações</string>
@@ -56,5 +56,11 @@
 <!--    Credit Screen-->
     <string name="credito_desenvolvedor">Desenvolvedor:</string>
     <string name="nome_laila">Laila R. H. de Campos</string>
+    <string name="versao_android_title">Versão do Android:</string>
+    <string name="versao_android_content">%1$s</string>
+    <string name="versao_sdk_title">SDK:</string>
+    <string name="versao_sdk_content">%1$d</string>
+    <string name="versao_app">Versão do Aplicativo:</string>
+    <string name="versao_app_number">0.1.0</string>
 
 </resources>
