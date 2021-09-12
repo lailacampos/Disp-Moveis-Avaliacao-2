@@ -35,7 +35,7 @@ public class ConfigScreen extends AppCompatActivity {
         this.infoTrafegoRadioGroup =        findViewById(R.id.informacoes_trafego_RadioGroup);
 
         this.grauDecimalRadionButton =      findViewById(R.id.grau_decimal_RadioButton);
-        this.grauMinutoRadionButton =       findViewById(R.id.grau_minuto_RadioButton;
+        this.grauMinutoRadionButton =       findViewById(R.id.grau_minuto_RadioButton);
         this.grauSegundoRadionButton =      findViewById(R.id.grau_minuto_segundo_RadioButton);
 
         this.quilometroHoraRadionButton =   findViewById(R.id.km_hora_RadioButton);
