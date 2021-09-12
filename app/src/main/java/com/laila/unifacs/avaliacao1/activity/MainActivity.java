@@ -3,6 +3,7 @@ package com.laila.unifacs.avaliacao1.activity;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -10,6 +11,10 @@ import android.widget.Toast;
 import com.laila.unifacs.avaliacao1.R;
 
 public class MainActivity extends AppCompatActivity {
+
+    SharedPreferences sharedPreferences;
+
+    private final String PREFERENCE_NAME = "myPref";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,5 +35,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intentCredit = new Intent(this, CreditScreen.class);
         startActivity(intentCredit);
     }
-    
+
+    public void getData() {
+
+    }
+
 }

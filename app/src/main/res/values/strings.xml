@@ -19,6 +19,8 @@
     <string name="historico_button">Histórico</string>
     <string name="informacoes_gnss_button">Informações (GNSS)</string>
     <string name="creditos_button">Créditos</string>
+    <string name="salvar_preferencias_button">Salvar Preferências</string>
+    <string name="limpar_preferencias_button">Limpar Preferências</string>
 
 
     <!--    Configuration Screen-->

@@ -187,6 +187,27 @@
                     android:layout_height="wrap_content"
                     android:text="@string/informacoes_trafego_desligado" />
             </RadioGroup>
+
+            <Button
+                android:id="@+id/salvar_pref_Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/salvar_preferencias_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/informacoes_trafego_RadioGroup"
+                android:onClick="savePreferences"/>
+
+            <Button
+                android:id="@+id/limpar_pref_Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/limpar_preferencias_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/salvar_pref_Button"
+                android:onClick="clearPreferences"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>
