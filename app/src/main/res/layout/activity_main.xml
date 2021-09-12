@@ -16,7 +16,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.32999998" />
+        app:layout_constraintVertical_bias="0.32999998"
+        android:onClick="changeToConfigScreen"/>
 
     <Button
         android:id="@+id/navegacao_Button"
@@ -26,7 +27,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/configuracao_Button" />
+        app:layout_constraintTop_toBottomOf="@+id/configuracao_Button"
+        android:onClick="featureNotImplemented"/>
 
     <Button
         android:id="@+id/historico_Button"
@@ -35,7 +37,8 @@
         android:text="@string/historico_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/navegacao_Button" />
+        app:layout_constraintTop_toBottomOf="@+id/navegacao_Button"
+        android:onClick="featureNotImplemented"/>
 
     <Button
         android:id="@+id/informacoes_gnss_Button"
@@ -44,7 +47,8 @@
         android:text="@string/informacoes_gnss_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/historico_Button" />
+        app:layout_constraintTop_toBottomOf="@+id/historico_Button"
+        android:onClick="featureNotImplemented"/>
 
     <Button
         android:id="@+id/creditos_Button"
@@ -53,5 +57,6 @@
         android:text="@string/creditos_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/informacoes_gnss_Button" />
+        app:layout_constraintTop_toBottomOf="@+id/informacoes_gnss_Button"
+        android:onClick="changeToCreditScreen"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
