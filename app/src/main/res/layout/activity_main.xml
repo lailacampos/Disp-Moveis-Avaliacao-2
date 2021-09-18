@@ -11,34 +11,41 @@
         android:id="@+id/configuracao_Button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:onClick="changeToConfigScreen"
         android:text="@string/configuracao_button"
+        app:icon="@drawable/gear_24"
+        app:iconPadding="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.32999998"
-        android:onClick="changeToConfigScreen"/>
+        app:layout_constraintVertical_bias="0.32999998" />
 
     <Button
         android:id="@+id/navegacao_Button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:onClick="featureNotImplemented"
         android:text="@string/navegacao_button"
+        app:icon="@drawable/map_24"
+        app:iconPadding="0dp"
+        app:iconTint="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/configuracao_Button"
-        android:onClick="featureNotImplemented"/>
+        app:layout_constraintTop_toBottomOf="@+id/configuracao_Button" />
 
     <Button
         android:id="@+id/historico_Button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:onClick="featureNotImplemented"
         android:text="@string/historico_button"
+        app:icon="@drawable/ic_baseline_history_24"
+        app:iconPadding="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/navegacao_Button"
-        android:onClick="featureNotImplemented"/>
+        app:layout_constraintTop_toBottomOf="@+id/navegacao_Button" />
 
     <Button
         android:id="@+id/informacoes_gnss_Button"
