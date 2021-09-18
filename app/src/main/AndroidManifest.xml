@@ -12,15 +12,18 @@
         <activity
             android:name=".activity.CreditScreen"
             android:exported="true"
-            android:label="@string/tela_creditos"/>
+            android:label="@string/tela_creditos"
+            android:theme="@style/myTheme"/>
         <activity
             android:name=".activity.ConfigScreen"
             android:exported="true"
-            android:label="@string/tela_configuracao"/>
+            android:label="@string/tela_configuracao"
+            android:theme="@style/myTheme"/>
         <activity
             android:name=".activity.MainActivity"
             android:exported="true"
-            android:label="@string/tela_inicial">
+            android:label="@string/tela_inicial"
+            android:theme="@style/myTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

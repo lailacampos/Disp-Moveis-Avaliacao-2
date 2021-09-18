@@ -7,43 +7,59 @@
     android:layout_margin="32dp"
     tools:context=".activity.MainActivity">
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/configuracao_Button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
         android:onClick="changeToConfigScreen"
         android:text="@string/configuracao_button"
+        app:cornerRadius="25dp"
         app:icon="@drawable/gear_24"
-        app:iconPadding="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:iconGravity="textEnd"
+        app:iconPadding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/navegacao_Button"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.32999998" />
+        app:layout_constraintTop_toBottomOf="@+id/app_title_TextView" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/navegacao_Button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:onClick="featureNotImplemented"
         android:text="@string/navegacao_button"
+        app:cornerRadius="25dp"
         app:icon="@drawable/map_24"
-        app:iconPadding="0dp"
+        app:iconGravity="textEnd"
+        app:iconPadding="8dp"
         app:iconTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/historico_Button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/configuracao_Button" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/historico_Button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:onClick="featureNotImplemented"
         android:text="@string/historico_button"
-        app:icon="@drawable/ic_baseline_history_24"
-        app:iconPadding="0dp"
+        app:cornerRadius="25dp"
+        app:icon="@drawable/history_24"
+        app:iconGravity="textEnd"
+        app:iconPadding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/informacoes_gnss_Button"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/navegacao_Button" />
 
@@ -51,19 +67,63 @@
         android:id="@+id/informacoes_gnss_Button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="featureNotImplemented"
         android:text="@string/informacoes_gnss_button"
+        app:cornerRadius="25dp"
+        app:icon="@drawable/info_24"
+        app:iconGravity="textEnd"
+        app:layout_constraintBottom_toTopOf="@+id/creditos_Button"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/historico_Button"
-        android:onClick="featureNotImplemented"/>
+        app:layout_constraintTop_toBottomOf="@+id/historico_Button" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/creditos_Button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="changeToCreditScreen"
         android:text="@string/creditos_button"
+        app:cornerRadius="25dp"
+        app:icon="@drawable/credits_24"
+        app:iconGravity="textEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/informacoes_gnss_Button"
-        android:onClick="changeToCreditScreen"/>
+        app:layout_constraintTop_toBottomOf="@+id/informacoes_gnss_Button" />
+
+    <ImageView
+        android:id="@+id/map_logo_ImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/app_title_TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/map_logo_512" />
+
+    <TextView
+        android:id="@+id/app_title_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/app_title"
+        android:textColor="@color/orange_red"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/lemon_jelly"
+        app:layout_constraintBottom_toTopOf="@+id/configuracao_Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/map_logo_ImageView"
+        app:textAllCaps="false" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

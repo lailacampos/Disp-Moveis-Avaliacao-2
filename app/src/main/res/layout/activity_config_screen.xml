@@ -188,26 +188,33 @@
                     android:text="@string/informacoes_trafego_desligado" />
             </RadioGroup>
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/salvar_pref_Button"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:onClick="savePreferences"
                 android:text="@string/salvar_preferencias_button"
+                app:cornerRadius="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/informacoes_trafego_RadioGroup"
-                android:onClick="savePreferences"/>
+                app:layout_constraintTop_toBottomOf="@+id/informacoes_trafego_RadioGroup" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/limpar_pref_Button"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:onClick="clearPreferences"
                 android:text="@string/limpar_preferencias_button"
+                app:cornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/salvar_pref_Button"
-                android:onClick="clearPreferences"/>
+                app:layout_constraintTop_toBottomOf="@+id/salvar_pref_Button" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>

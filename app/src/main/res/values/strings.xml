@@ -4,6 +4,8 @@
 <!--    Toasts-->
     <string name="feature_not_implemented_toast">Desculpe! Essa funcionalidade ainda não foi implementada</string>
 
+    <string name="app_title">Map Tracker</string>
+
     <!--    Screens-->
     <string name="tela_inicial">Tela Inicial</string>
     <string name="tela_configuracao">Configurações</string>
@@ -17,7 +19,7 @@
     <string name="configuracao_button">Configurações</string>
     <string name="navegacao_button">Navegação</string>
     <string name="historico_button">Histórico</string>
-    <string name="informacoes_gnss_button">Informações (GNSS)</string>
+    <string name="informacoes_gnss_button">Informações</string>
     <string name="creditos_button">Créditos</string>
     <string name="salvar_preferencias_button">Salvar Preferências</string>
     <string name="limpar_preferencias_button">Limpar Preferências</string>
