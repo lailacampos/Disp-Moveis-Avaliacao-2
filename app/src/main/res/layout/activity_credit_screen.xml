@@ -114,7 +114,7 @@
         android:gravity="center"
         android:paddingLeft="30dp"
         android:paddingRight="30dp"
-        android:text="@string/descricao_app"
+        android:text="@string/app_description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />

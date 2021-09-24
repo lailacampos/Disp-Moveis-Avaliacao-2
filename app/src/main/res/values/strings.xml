@@ -64,9 +64,6 @@
     <string name="versao_sdk_content">%1$d</string>
     <string name="versao_app">Versão do Aplicativo:</string>
     <string name="versao_app_number">0.1.0</string>
-
-    <string name="descricao_app">Este aplicativo tem como finalidade possibilitar ao usuário a visualização de sua posição em tempo real e a apresentação de um histórico do
-        seu posicionamento ao longo do tempo. As opções de vizualização são configuráveis e é possível acessar informações referentes ao sistema
-        de posicionamento por satélites</string>
+    <string name="app_description">Este aplicativo tem como finalidade possibilitar ao usuário a visualização de sua posição em tempo real e a apresentação de um histórico do seu posicionamento ao longo do tempo. As opções de vizualização são configuráveis e é possível acessar informações referentes ao sistema de posicionamento por satélites</string>
 
 </resources>

@@ -41,6 +41,5 @@
     <string name="versao_sdk_content">%1$d</string>
     <string name="versao_app">App Version:</string>
     <string name="versao_app_number">0.1.0</string>
-    <string name="descricao_app">This app purpose is to enable to user to see their own position in real time as well as present a history of their
-        location over time. The view options are configurable and it's possible to access information referring to the satellite positioning system</string>
+    <string name="app_description">This app\'s purpose is to enable to user to see their own position in real time as well as present a history of their location over time. The view options are configurable and it\'s possible to access information referring to the satellite positioning system</string>
 </resources>
