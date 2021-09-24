@@ -14,7 +14,9 @@
     <color name="medium_gray">#bcbcbc</color>
     <color name="bluish_gray">#bdbdc7</color>
     <color name="dark_gray">#505050</color>
-    
+
+    <color name="light_blue">#8EB4E4</color>
+    <color name="light_medium_blue">#3080E4</color>
     <color name="dark_medium_blue">#023E8A</color>
     <color name="navy_blue">#03045E</color>
     <color name="orange_red">#ce412d</color>

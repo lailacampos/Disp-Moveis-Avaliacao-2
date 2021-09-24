@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Avaliacao 1</string>
+    <string name="feature_not_implemented_toast">Sorry! Feature not implemented yet</string>
+    <string name="app_title">Map Tracker</string>
+    <string name="tela_inicial">Initial Screen</string>
+    <string name="tela_configuracao">Configurations</string>
+    <string name="tela_navegacao">Navegation</string>
+    <string name="tela_historico">History</string>
+    <string name="tela_informacoes_gnss">Information</string>
+    <string name="tela_creditos">Credits</string>
+    <string name="configuracao_button">Configurations</string>
+    <string name="navegacao_button">Navegation</string>
+    <string name="historico_button">History</string>
+    <string name="informacoes_gnss_button">Information</string>
+    <string name="creditos_button">Credits</string>
+    <string name="salvar_preferencias_button">Save Preferences</string>
+    <string name="limpar_preferencias_button">Clear Preferences</string>
+    <string name="coordenadas_formato_escolha_texto">Geographic Coordinates:</string>
+    <string name="grau_decimal">Decimal degree</string>
+    <string name="grau_minuto_decimal">Decimal degree-minute</string>
+    <string name="grau_minuto_segundo_decimal">Decimal degree-minute-second</string>
+    <string name="unidade_velocidade_texto">Speed unit:</string>
+    <string name="quilometro_hora">Km/h (Kilometers per hour)</string>
+    <string name="milhas_hora">Mph (miles per hour)</string>
+    <string name="orientacao_mapa_texto">Map Orientation:</string>
+    <string name="nenhuma_orientacao_mapa">None</string>
+    <string name="north_up_orientacao_mapa">North Up</string>
+    <string name="course_up_orientacao_mapa">Course Up</string>
+    <string name="tipo_mapa_texto">Map type:</string>
+    <string name="vetorial_tipo_mapa">Vector</string>
+    <string name="satelite_tipo_mapa">Satellite Image</string>
+    <string name="informacoes_trafego_texto">Traffic Information</string>
+    <string name="informacoes_trafego_ligado">On</string>
+    <string name="informacoes_trafego_desligado">Off</string>
+    <string name="credito_desenvolvedor">Developer:</string>
+    <string name="nome_laila">Laila R. H. de Campos</string>
+    <string name="versao_android_title">Android Version:</string>
+    <string name="versao_android_content">%1$s</string>
+    <string name="versao_sdk_title">SDK:</string>
+    <string name="versao_sdk_content">%1$d</string>
+    <string name="versao_app">App Version:</string>
+    <string name="versao_app_number">0.1.0</string>
+    <string name="descricao_app">This app purpose is to enable to user to see their own position in real time as well as present a history of their
+        location over time. The view options are configurable and it's possible to access information referring to the satellite positioning system</string>
+</resources>

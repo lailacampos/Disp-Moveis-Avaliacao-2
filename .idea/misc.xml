@@ -3,7 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Programming/Android/Projects/AndroidStudio/Unifacs/Avaliacao1/app/src/main/res/layout/activity_config_screen.xml" value="0.36666666666666664" />
+        <entry key="..\:/Programming/Android/Projects/AndroidStudio/Unifacs/Avaliacao1/app/src/main/res/drawable/rounded_corner_textview.xml" value="0.21770833333333334" />
+        <entry key="..\:/Programming/Android/Projects/AndroidStudio/Unifacs/Avaliacao1/app/src/main/res/layout/activity_config_screen.xml" value="0.355045871559633" />
         <entry key="..\:/Programming/Android/Projects/AndroidStudio/Unifacs/Avaliacao1/app/src/main/res/layout/activity_credit_screen.xml" value="0.33" />
         <entry key="..\:/Programming/Android/Projects/AndroidStudio/Unifacs/Avaliacao1/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Programming/Android/Projects/AndroidStudio/Unifacs/Avaliacao1/app/src/main/res/layout/activity_main_screen.xml" value="0.35260416666666666" />

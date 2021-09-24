@@ -28,11 +28,16 @@
 
             <TextView
                 android:id="@+id/coordenadas_geograficas_TextView"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
+                android:background="@drawable/rounded_corner_textview"
+                android:drawablePadding="10dp"
+                android:padding="15dp"
                 android:text="@string/coordenadas_formato_escolha_texto"
+                android:textColor="@color/light_medium_gray"
                 android:textSize="18sp"
+                app:drawableLeftCompat="@drawable/coord_geo_location_24"
                 app:layout_constraintStart_toStartOf="@+id/guideline2"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -64,11 +69,16 @@
 
             <TextView
                 android:id="@+id/unidade_velocidade_TextView"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
+                android:background="@drawable/rounded_corner_textview"
+                android:drawablePadding="10dp"
+                android:padding="15dp"
                 android:text="@string/unidade_velocidade_texto"
+                android:textColor="@color/light_medium_gray"
                 android:textSize="18sp"
+                app:drawableLeftCompat="@drawable/velocity_24"
                 app:layout_constraintStart_toStartOf="@+id/guideline2"
                 app:layout_constraintTop_toBottomOf="@+id/coordenadas_geograficas_RadioGroup" />
 
@@ -97,8 +107,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
+                android:background="@drawable/rounded_corner_textview"
+                android:drawablePadding="10dp"
+                android:padding="15dp"
                 android:text="@string/orientacao_mapa_texto"
+                android:textColor="@color/light_medium_gray"
                 android:textSize="18sp"
+                app:drawableLeftCompat="@drawable/logo_planet_24"
+                app:drawableTint="@color/white"
                 app:layout_constraintStart_toStartOf="@+id/guideline2"
                 app:layout_constraintTop_toBottomOf="@+id/unidade_velocidade_RadioGroup" />
 
@@ -130,11 +146,17 @@
 
             <TextView
                 android:id="@+id/tipo_mapa_TextView"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
+                android:background="@drawable/rounded_corner_textview"
+                android:drawablePadding="10dp"
+                android:padding="15dp"
                 android:text="@string/tipo_mapa_texto"
+                android:textColor="@color/light_medium_gray"
                 android:textSize="18sp"
+                app:drawableLeftCompat="@drawable/global_24"
+                app:drawableTint="@color/white"
                 app:layout_constraintStart_toStartOf="@+id/guideline2"
                 app:layout_constraintTop_toBottomOf="@+id/orientacao_mapa_RadioGroup" />
 
@@ -160,11 +182,17 @@
 
             <TextView
                 android:id="@+id/informacoes_trafego_TextView"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
+                android:background="@drawable/rounded_corner_textview"
+                android:drawablePadding="10dp"
+                android:padding="15dp"
                 android:text="@string/informacoes_trafego_texto"
+                android:textColor="@color/light_medium_gray"
                 android:textSize="18sp"
+                app:drawableLeftCompat="@drawable/traffic_24"
+                app:drawableTint="@color/white"
                 app:layout_constraintStart_toStartOf="@+id/guideline2"
                 app:layout_constraintTop_toBottomOf="@+id/tipo_mapa_RadioGroup" />
 
