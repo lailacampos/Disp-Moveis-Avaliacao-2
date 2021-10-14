@@ -23,7 +23,9 @@ public class MainActivity extends AppCompatActivity {
     }
     
     public void featureNotImplemented(View view) {
-        Toast.makeText(this, R.string.feature_not_implemented_toast, Toast.LENGTH_SHORT).show();
+                Toast.makeText(this,
+                R.string.feature_not_implemented_toast,
+                Toast.LENGTH_SHORT).show();
     }
 
     public void changeToConfigScreen(View view) {
