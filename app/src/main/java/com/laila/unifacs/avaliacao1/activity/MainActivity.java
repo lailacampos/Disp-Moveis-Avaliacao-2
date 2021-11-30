@@ -1,12 +1,12 @@
 package com.laila.unifacs.avaliacao1.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.laila.unifacs.avaliacao1.R;
 
@@ -34,6 +34,11 @@ public class MainActivity extends AppCompatActivity {
     public void changeToCreditScreen (View view) {
         Intent intentCredit = new Intent(this, CreditScreen.class);
         startActivity(intentCredit);
+    }
+
+    public void changeToNagegationScreen(View view) {
+        Intent intent = new Intent(this, MapsActivity.class);
+        startActivity(intent);
     }
 
     public void getData() {

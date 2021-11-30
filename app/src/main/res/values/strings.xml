@@ -55,6 +55,12 @@
     <string name="informacoes_trafego_ligado">Ligado</string>
     <string name="informacoes_trafego_desligado">Desligado</string>
 
+    <!--    Navegation Screen-->
+    <string name="barra_status_titulo">Dados de Localização</string>
+    <string name="current_latitude_label">Latitude: </string>
+    <string name="current_longitude_label">Longitude: </string>
+    <string name="current_speed">Velocidade: </string>
+
     <!--    Credit Screen-->
     <string name="credito_desenvolvedor">Desenvolvedor:</string>
     <string name="nome_laila">Laila R. H. de Campos</string>
@@ -65,6 +71,8 @@
     <string name="versao_app">Versão do Aplicativo:</string>
     <string name="versao_app_number">0.1.0</string>
     <string name="app_description">Este aplicativo tem como finalidade possibilitar ao usuário a visualização de sua posição em tempo real e a apresentação de um histórico do seu posicionamento ao longo do tempo. As opções de vizualização são configuráveis e é possível acessar informações referentes ao sistema de posicionamento por satélites</string>
+
+
     <string name="title_activity_maps">MapsActivity</string>
 
 </resources>
