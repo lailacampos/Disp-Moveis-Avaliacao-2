@@ -53,24 +53,24 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/grau_decimal"
-                    app:buttonTint="@color/orange_red"
-                    android:textColor="@drawable/radio_button_style" />
+                    android:textColor="@drawable/radio_button_style"
+                    app:buttonTint="@color/orange_red" />
 
                 <RadioButton
                     android:id="@+id/grau_minuto_RadioButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/grau_minuto_decimal"
-                    app:buttonTint="@color/orange_red"
-                    android:textColor="@drawable/radio_button_style"/>
+                    android:textColor="@drawable/radio_button_style"
+                    app:buttonTint="@color/orange_red" />
 
                 <RadioButton
                     android:id="@+id/grau_minuto_segundo_RadioButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/grau_minuto_segundo_decimal"
-                    app:buttonTint="@color/orange_red"
-                    android:textColor="@drawable/radio_button_style"/>
+                    android:textColor="@drawable/radio_button_style"
+                    app:buttonTint="@color/orange_red" />
             </RadioGroup>
 
             <TextView
@@ -100,16 +100,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/quilometro_hora"
-                    app:buttonTint="@color/orange_red"
-                    android:textColor="@drawable/radio_button_style"/>
+                    android:textColor="@drawable/radio_button_style"
+                    app:buttonTint="@color/orange_red" />
 
                 <RadioButton
                     android:id="@+id/milha_hora_RadioButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/milhas_hora"
-                    app:buttonTint="@color/orange_red"
-                    android:textColor="@drawable/radio_button_style"/>
+                    android:textColor="@drawable/radio_button_style"
+                    app:buttonTint="@color/orange_red" />
             </RadioGroup>
 
             <TextView
@@ -140,24 +140,24 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/nenhuma_orientacao_mapa"
-                    app:buttonTint="@color/orange_red"
-                    android:textColor="@drawable/radio_button_style"/>
+                    android:textColor="@drawable/radio_button_style"
+                    app:buttonTint="@color/orange_red" />
 
                 <RadioButton
                     android:id="@+id/orientacao_north_up_RadioButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/north_up_orientacao_mapa"
-                    app:buttonTint="@color/orange_red"
-                    android:textColor="@drawable/radio_button_style"/>
+                    android:textColor="@drawable/radio_button_style"
+                    app:buttonTint="@color/orange_red" />
 
                 <RadioButton
                     android:id="@+id/orientacao_course_up_RadioButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/course_up_orientacao_mapa"
-                    app:buttonTint="@color/orange_red"
-                    android:textColor="@drawable/radio_button_style"/>
+                    android:textColor="@drawable/radio_button_style"
+                    app:buttonTint="@color/orange_red" />
             </RadioGroup>
 
             <TextView
@@ -188,16 +188,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/vetorial_tipo_mapa"
-                    app:buttonTint="@color/orange_red"
-                    android:textColor="@drawable/radio_button_style"/>
+                    android:textColor="@drawable/radio_button_style"
+                    app:buttonTint="@color/orange_red" />
 
                 <RadioButton
                     android:id="@+id/imagem_satelite_RadioButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/satelite_tipo_mapa"
-                    app:buttonTint="@color/orange_red"
-                    android:textColor="@drawable/radio_button_style"/>
+                    android:textColor="@drawable/radio_button_style"
+                    app:buttonTint="@color/orange_red" />
             </RadioGroup>
 
             <TextView
@@ -228,16 +228,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/informacoes_trafego_ligado"
-                    app:buttonTint="@color/orange_red"
-                    android:textColor="@drawable/radio_button_style"/>
+                    android:textColor="@drawable/radio_button_style"
+                    app:buttonTint="@color/orange_red" />
 
                 <RadioButton
                     android:id="@+id/trafego_desligado_RadioButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/informacoes_trafego_desligado"
-                    app:buttonTint="@color/orange_red"
-                    android:textColor="@drawable/radio_button_style"/>
+                    android:textColor="@drawable/radio_button_style"
+                    app:buttonTint="@color/orange_red" />
             </RadioGroup>
 
             <com.google.android.material.button.MaterialButton
