@@ -4,6 +4,7 @@ import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.location.Location;
 import android.os.Build;
 import android.os.Bundle;
@@ -25,6 +26,9 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.CameraPosition;
+import com.google.android.gms.maps.model.Circle;
+import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -73,6 +77,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public static final int PERMISSION_FINE_LOCATION = 99;
     public static final int DEFAULT_UPDATE_INTERVAL = 1;
     public static final int FAST_UPDATE_INTERVAL = 1;
+
+    private Circle accuracyCircle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -124,6 +130,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 if(grantResults[0] == PackageManager.PERMISSION_GRANTED) {
 
                     // TODO Implement here the logic for when permission is granted
+                    startLocationUpdates();
 
                 } else {
                     Toast.makeText(MapsActivity.this, R.string.app_requires_permission, Toast.LENGTH_SHORT).show();
@@ -163,6 +170,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 // Place marker on map
                 // Coloca o marcador no mapa
                 placeMarker(currentLocation);
+
+                // Draws an accuracy circle
+                // Desenha um circulo de precisão ao redor do usuário
+                Float accuracy = currentLocation.getAccuracy();
+                drawAccuracyCircle(currentLocation, accuracy);
+
+                // Rotate camera
+                rotateMap(currentLocation);
             }
         };
     }
@@ -265,10 +280,68 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
     }
 
+    // Draws a transparent circle around the user's position in which the circle's radius is the accuracy
+    // Desenha um circulo transparente ao redor da posição do usuário, cujo raio é o grau de precisão de localização
+    private void drawAccuracyCircle(Location location, Float accuracy) {
+
+        int accuracyStrokeColor = Color.argb(50, 130, 182, 228);
+        int accuracyFillColor = Color.argb(100, 130, 182, 228);
+
+        if (accuracyCircle != null) {accuracyCircle.remove();}
+
+        CircleOptions circleOptions = new CircleOptions()
+                .center(new LatLng(location.getLatitude(), location.getLongitude()))
+                .radius(accuracy)
+                .fillColor(accuracyFillColor)
+                .strokeColor(accuracyStrokeColor)
+                .strokeWidth(2.0f);
+
+        accuracyCircle = mMap.addCircle(circleOptions);
+    }
+
     private void setMapConfigurations() {
 
         this.changeMapType();
         this.setTrafficInfo();
+    }
+
+    private void rotateMap(Location location) {
+
+        if(orientacaoMapaRadioButtonSelected == R.id.orientacao_course_up_RadioButton) {
+
+            if (location.hasBearing()) {
+
+                CameraPosition cameraPosition = CameraPosition
+                        .builder(
+                                mMap.getCameraPosition() // Current camera position
+                        )
+                        .bearing(location.getBearing())
+                        .build();
+
+                mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+                mMap.getUiSettings().setRotateGesturesEnabled(false);
+            }
+        }
+        else if (orientacaoMapaRadioButtonSelected == R.id.orientacao_north_up_RadioButton) {
+
+            CameraPosition cameraPosition = CameraPosition
+                    .builder(
+                            mMap.getCameraPosition() // Current camera position
+                    ).build();
+
+            mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+            mMap.getUiSettings().setRotateGesturesEnabled(false);
+        }
+        else if (orientacaoMapaRadioButtonSelected == R.id.orientacao_nenhuma_RadioButton) {
+
+            CameraPosition cameraPosition = CameraPosition
+                    .builder(
+                            mMap.getCameraPosition() // Current camera position
+                    ).build();
+
+            mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+            mMap.getUiSettings().setRotateGesturesEnabled(true);
+        }
     }
 
     private void changeMapType() {
