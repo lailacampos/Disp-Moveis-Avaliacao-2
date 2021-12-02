@@ -36,6 +36,9 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.laila.unifacs.avaliacao1.R;
 import com.laila.unifacs.avaliacao1.databinding.ActivityMapsBinding;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
@@ -134,6 +137,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                 } else {
                     Toast.makeText(MapsActivity.this, R.string.app_requires_permission, Toast.LENGTH_SHORT).show();
+                    finish();
                 }
         }
     }
@@ -247,18 +251,25 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private void updateUIViews(Location location) {
 
-        this.latitudeTextView.setText(String.valueOf(location.getLatitude()));
-        this.longitudeTextView.setText(String.valueOf(location.getLongitude()));
+        double latitude = location.getLatitude();
+        double longitude = location.getLongitude();
+        float velocidade = 0;
+        List<String> latLongList;
 
         if (location.hasSpeed()) {
-
-            this.speedTextView.setText(String.valueOf(location.getSpeed()));
-
-        } else {
-
-            this.speedTextView.setText(R.string.velocicade_nao_disponivel);
-
+            velocidade = location.getSpeed();
+            String velocidadeString = checkSpeedUnity(velocidade);
+            this.speedTextView.setText(velocidadeString);
         }
+        else {
+            this.speedTextView.setText(R.string.velocicade_nao_disponivel);
+        }
+
+        latLongList = convertLatLong(latitude, longitude);
+
+        this.latitudeTextView.setText(latLongList.get(0));
+        this.longitudeTextView.setText(latLongList.get(1));
+
     }
 
     // Place marker on map
@@ -380,6 +391,52 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             // Informação de tráfico está desligada
             mMap.setTrafficEnabled(false);
         }
+    }
+
+    private List<String> convertLatLong(double latitude, double longitude) {
+
+        List<String> latlongList;
+
+        if(coordGeograficasRadionButtonSelected == R.id.grau_decimal_RadioButton) {
+
+            latlongList = UnityConvertion.convertLatLongDecimal(latitude, longitude);
+
+            return latlongList;
+
+        }
+        else if (coordGeograficasRadionButtonSelected == R.id.grau_minuto_RadioButton) {
+
+            latlongList = UnityConvertion.convertLatLongGrauMinuto(latitude, longitude);
+
+            return latlongList;
+
+        }
+        else if (coordGeograficasRadionButtonSelected == R.id.grau_minuto_segundo_RadioButton) {
+
+            latlongList = UnityConvertion.convertLatLongGrauMinutoSegundo(latitude, longitude);
+            return latlongList;
+        }
+        else {
+
+            latlongList = new ArrayList<>();
+            latlongList.add(String.valueOf(latitude));
+            latlongList.add(String.valueOf(longitude));
+
+            return latlongList;
+        }
+    }
+
+    private String checkSpeedUnity(float velocidade) {
+
+        if(unidadeVelocidadeRadioButtonSelected == R.id.milha_hora_RadioButton) {
+            String velocidadeString = UnityConvertion.convertSpeedKmToMile(velocidade);
+            return velocidadeString;
+        }
+        else {
+            String velocidadeString = UnityConvertion.formatSpeedKmH(velocidade);
+            return velocidadeString;
+        }
+
     }
 
 }
