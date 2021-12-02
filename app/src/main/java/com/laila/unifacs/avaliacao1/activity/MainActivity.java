@@ -41,6 +41,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void changeToHistoricScreen(View view) {
+        Intent intent = new Intent(this, ListaHistoricoActivity.class);
+        startActivity(intent);
+    }
+
     public void getData() {
 
     }

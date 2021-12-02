@@ -57,28 +57,31 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private LocationRequest locationRequest;
     private LocationCallback locationCallback;
 
+    private List<Location> savedLocationsList;
+
     private TextView latitudeTextView, longitudeTextView, speedTextView;
 
+    // region RadioButtons variables
     private int orientacaoMapaRadioButtonSelected;
     private int tipoMapaRadioButtonSelected;
     private int infoTrafegoRadioButtonSelected;
     private int coordGeograficasRadionButtonSelected;
     private int unidadeVelocidadeRadioButtonSelected;
+    // endregion
 
     private final String permission = Manifest.permission.ACCESS_FINE_LOCATION;
 
+    // region SharedPreferences' key variables
     private final String PREFERENCE_NAME = "myPref";
     private final String ORIENTACAO_MAPA_KEY = "orientacaoMapaKey";
     private final String TIPO_MAPA_KEY = "tipoMapaKey";
     private final String INFO_TRAFEGO_KEY = "infoTrafegoKey";
-//    private final String VELOCIDADE_KEY = "velocidadeKey";
-//    private final String LATITUDE_KEY = "latitudeKey";
-//    private final String LONGITUDE_KEY = "longitudeKey";
     private final String COORD_GEO_KEY = "coordGeoKey";
     private final String UNIDADE_VELOCIDADE_KEY = "unidadeVelocidadeKey";
+    // endregion
 
     public static final int PERMISSION_FINE_LOCATION = 99;
-    public static final int DEFAULT_UPDATE_INTERVAL = 1;
+    public static final int DEFAULT_UPDATE_INTERVAL = 5;
     public static final int FAST_UPDATE_INTERVAL = 1;
 
     private Circle accuracyCircle;
@@ -160,12 +163,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                 // Gets last known location
                 // Recebe o valor da última localização
-                MapsActivity.this.currentLocation =locationResult.getLastLocation();
+                MapsActivity.this.currentLocation = locationResult.getLastLocation();
 
-                // If there's already a marker, remove it
-                if (currentLocationMarker != null) {
-                    currentLocationMarker.remove();
-                }
+                // Calls the one instance of the MyLocation class
+                MyLocation myLocation = (MyLocation) getApplicationContext();
+                savedLocationsList = myLocation.getLocationList();
+
+                // Adds current location to local location list
+                savedLocationsList.add(currentLocation);
 
                 // Update status bar
                 // Atualiza a barra de status
@@ -275,6 +280,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     // Place marker on map
     // Coloca o marcador no mapa
     private void placeMarker(Location location){
+
+        // If there's already a marker, remove it
+        if (currentLocationMarker != null) {
+            currentLocationMarker.remove();
+        }
 
         LatLng latLng = new LatLng(location.getLatitude(), location.getLongitude());
 
