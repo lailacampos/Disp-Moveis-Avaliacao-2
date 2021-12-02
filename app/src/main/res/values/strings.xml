@@ -3,6 +3,7 @@
 
     <!--    Toasts-->
     <string name="feature_not_implemented_toast">Desculpe! Essa funcionalidade ainda não foi implementada</string>
+    <string name="app_requires_permission">Este aplicativo necessita que a permissão seja concedida para funcionar apropriadamente</string>
 
     <string name="app_title">Map Tracker</string>
 
@@ -60,6 +61,7 @@
     <string name="current_latitude_label">Latitude: </string>
     <string name="current_longitude_label">Longitude: </string>
     <string name="current_speed">Velocidade: </string>
+    <string name="velocicade_nao_disponivel">Velocidade não disponível</string>
 
     <!--    Credit Screen-->
     <string name="credito_desenvolvedor">Desenvolvedor:</string>

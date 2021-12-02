@@ -58,7 +58,7 @@
             map:layout_constraintTop_toBottomOf="@+id/barra_status_titulo_TextView" />
 
         <TextView
-            android:id="@+id/latirude_value_textView"
+            android:id="@+id/latitude_value_textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="20dp"
@@ -88,7 +88,7 @@
             android:paddingBottom="5dp"
             android:text="0"
             map:layout_constraintStart_toEndOf="@+id/longitude_textView"
-            map:layout_constraintTop_toBottomOf="@+id/latirude_value_textView" />
+            map:layout_constraintTop_toBottomOf="@+id/latitude_value_textView" />
 
         <TextView
             android:id="@+id/velocidade_textView"
@@ -102,7 +102,7 @@
             map:layout_constraintTop_toBottomOf="@+id/longitude_textView" />
 
         <TextView
-            android:id="@+id/velocidade_value_textView"
+            android:id="@+id/speed_value_textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="20dp"

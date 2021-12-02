@@ -47,4 +47,6 @@
     <string name="title_activity_maps">MapsActivity</string>
     <string name="current_latitude_label">Latitude:</string>
     <string name="current_longitude_label">Longitude:</string>
+    <string name="app_requires_permission">This app requires permission to be granted in order to work properly</string>
+    <string name="velocicade_nao_disponivel">Speed not available</string>
 </resources>
