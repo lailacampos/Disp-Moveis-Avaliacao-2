@@ -74,6 +74,12 @@
     <string name="versao_app_number">0.1.0</string>
     <string name="app_description">Este aplicativo tem como finalidade possibilitar ao usuário a visualização de sua posição em tempo real e a apresentação de um histórico do seu posicionamento ao longo do tempo. As opções de vizualização são configuráveis e é possível acessar informações referentes ao sistema de posicionamento por satélites</string>
 
+<!--    Historic Screen-->
+    <string name="clear_historic">Limpar Histórico</string>
+
+<!--    Database related strings-->
+    <string name="add_to_database_success">Lista adicionada ao banco de dados com sucesso</string>
+    <string name="add_to_database_failure">Erro ao adicionar lista ao banco de dados</string>
 
     <string name="title_activity_maps">MapsActivity</string>
 

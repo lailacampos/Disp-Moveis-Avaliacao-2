@@ -49,4 +49,7 @@
     <string name="current_longitude_label">Longitude:</string>
     <string name="app_requires_permission">This app requires permission to be granted in order to work properly</string>
     <string name="velocicade_nao_disponivel">Speed not available</string>
+    <string name="clear_historic">Clear Screen</string>
+    <string name="add_to_database_success">Location list succefully added to database</string>
+    <string name="add_to_database_failure">Failure to add list to databases</string>
 </resources>

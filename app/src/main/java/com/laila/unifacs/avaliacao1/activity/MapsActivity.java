@@ -34,6 +34,7 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.laila.unifacs.avaliacao1.R;
+import com.laila.unifacs.avaliacao1.activity.data.DAOLocation;
 import com.laila.unifacs.avaliacao1.databinding.ActivityMapsBinding;
 
 import java.util.ArrayList;
@@ -58,6 +59,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private LocationCallback locationCallback;
 
     private List<Location> savedLocationsList;
+    private List<Location> databaseLocationList;
 
     private TextView latitudeTextView, longitudeTextView, speedTextView;
 
@@ -90,8 +92,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
-
         binding = ActivityMapsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -100,6 +100,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
+        this.getDataFromDatabase();
         this.setViews();
         this.setLocationRequestConfiguration();
         this.setLocationCallbackConfiguration();
@@ -204,7 +205,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 requestPermissions(new String[]{this.permission}, PERMISSION_FINE_LOCATION);
             }
         }
-
     }
 
     private void setFusedLocationProviderClient() {
@@ -447,6 +447,19 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             return velocidadeString;
         }
 
+    }
+
+    private void drawLocationRoute() {
+
+    }
+
+    private void getDataFromDatabase() {
+
+        if(this.savedLocationsList != null) {
+
+            DAOLocation daoLocation = new DAOLocation();
+            this.savedLocationsList = daoLocation.retrieveLocationList();
+        }
     }
 
 }

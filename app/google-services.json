@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "36764506089",
+    "project_id": "premium-highway-330413",
+    "storage_bucket": "premium-highway-330413.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36764506089:android:79b6f1834d2f99ac461d78",
+        "android_client_info": {
+          "package_name": "com.laila.unifacs.avaliacao1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36764506089-vllpauoa9op4s2st3867hjomk862o3kk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAX8o0GIqZEluaW8HzRbpmfJFdGE8-yNJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "36764506089-vllpauoa9op4s2st3867hjomk862o3kk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
